@@ -2,7 +2,8 @@
 
 ARM regularly holds open science summer schools, which offer students an opportunity to learn about open source tools, work with ARM data, and develop their own workflows, aiming to answer a set of scientific questions. Previous events are listed below, with this chapter including the fully reproducible workflows.
 
-## 2024 ARM Open Science Summer School
+## [2024 ARM Open Science Summer School](https://doi.org/10.1175/BAMS-D-24-0270.1)
+
 - [Main Landing Page](https://arm-development.github.io/arm-summer-school-2024/)
 - [Github Repository](https://github.com/ARM-Development/arm-summer-school-2024)
 
