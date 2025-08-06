@@ -1,0 +1,399 @@
+<div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
+<defs>
+<symbol id="icon-database" viewBox="0 0 32 32">
+<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
+<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+</symbol>
+<symbol id="icon-file-text2" viewBox="0 0 32 32">
+<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
+<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+</symbol>
+</defs>
+</svg>
+<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
+ *
+ */
+
+:root {
+  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
+  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
+  --xr-border-color: var(--jp-border-color2, #e0e0e0);
+  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
+  --xr-background-color: var(--jp-layout-color0, white);
+  --xr-background-color-row-even: var(--jp-layout-color1, white);
+  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
+}
+
+html[theme=dark],
+html[data-theme=dark],
+body[data-theme=dark],
+body.vscode-dark {
+  --xr-font-color0: rgba(255, 255, 255, 1);
+  --xr-font-color2: rgba(255, 255, 255, 0.54);
+  --xr-font-color3: rgba(255, 255, 255, 0.38);
+  --xr-border-color: #1F1F1F;
+  --xr-disabled-color: #515151;
+  --xr-background-color: #111111;
+  --xr-background-color-row-even: #111111;
+  --xr-background-color-row-odd: #313131;
+}
+
+.xr-wrap {
+  display: block !important;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.xr-text-repr-fallback {
+  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
+  display: none;
+}
+
+.xr-header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  border-bottom: solid 1px var(--xr-border-color);
+}
+
+.xr-header > div,
+.xr-header > ul {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xr-obj-type,
+.xr-array-name {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.xr-obj-type {
+  color: var(--xr-font-color2);
+}
+
+.xr-sections {
+  padding-left: 0 !important;
+  display: grid;
+  grid-template-columns: 150px auto auto 1fr 0 20px 0 20px;
+}
+
+.xr-section-item {
+  display: contents;
+}
+
+.xr-section-item input {
+  display: inline-block;
+  opacity: 0;
+}
+
+.xr-section-item input + label {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-item input:enabled + label {
+  cursor: pointer;
+  color: var(--xr-font-color2);
+}
+
+.xr-section-item input:focus + label {
+  border: 2px solid var(--xr-font-color0);
+}
+
+.xr-section-item input:enabled + label:hover {
+  color: var(--xr-font-color0);
+}
+
+.xr-section-summary {
+  grid-column: 1;
+  color: var(--xr-font-color2);
+  font-weight: 500;
+}
+
+.xr-section-summary > span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+.xr-section-summary-in:disabled + label {
+  color: var(--xr-font-color2);
+}
+
+.xr-section-summary-in + label:before {
+  display: inline-block;
+  content: '►';
+  font-size: 11px;
+  width: 15px;
+  text-align: center;
+}
+
+.xr-section-summary-in:disabled + label:before {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-summary-in:checked + label:before {
+  content: '▼';
+}
+
+.xr-section-summary-in:checked + label > span {
+  display: none;
+}
+
+.xr-section-summary,
+.xr-section-inline-details {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.xr-section-inline-details {
+  grid-column: 2 / -1;
+}
+
+.xr-section-details {
+  display: none;
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+.xr-section-summary-in:checked ~ .xr-section-details {
+  display: contents;
+}
+
+.xr-array-wrap {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.xr-array-wrap > label {
+  grid-column: 1;
+  vertical-align: top;
+}
+
+.xr-preview {
+  color: var(--xr-font-color3);
+}
+
+.xr-array-preview,
+.xr-array-data {
+  padding: 0 5px !important;
+  grid-column: 2;
+}
+
+.xr-array-data,
+.xr-array-in:checked ~ .xr-array-preview {
+  display: none;
+}
+
+.xr-array-in:checked ~ .xr-array-data,
+.xr-array-preview {
+  display: inline-block;
+}
+
+.xr-dim-list {
+  display: inline-block !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.xr-dim-list li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.xr-dim-list:before {
+  content: '(';
+}
+
+.xr-dim-list:after {
+  content: ')';
+}
+
+.xr-dim-list li:not(:last-child):after {
+  content: ',';
+  padding-right: 5px;
+}
+
+.xr-has-index {
+  font-weight: bold;
+}
+
+.xr-var-list,
+.xr-var-item {
+  display: contents;
+}
+
+.xr-var-item > div,
+.xr-var-item label,
+.xr-var-item > .xr-var-name span {
+  background-color: var(--xr-background-color-row-even);
+  margin-bottom: 0;
+}
+
+.xr-var-item > .xr-var-name:hover span {
+  padding-right: 5px;
+}
+
+.xr-var-list > li:nth-child(odd) > div,
+.xr-var-list > li:nth-child(odd) > label,
+.xr-var-list > li:nth-child(odd) > .xr-var-name span {
+  background-color: var(--xr-background-color-row-odd);
+}
+
+.xr-var-name {
+  grid-column: 1;
+}
+
+.xr-var-dims {
+  grid-column: 2;
+}
+
+.xr-var-dtype {
+  grid-column: 3;
+  text-align: right;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-preview {
+  grid-column: 4;
+}
+
+.xr-index-preview {
+  grid-column: 2 / 5;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-name,
+.xr-var-dims,
+.xr-var-dtype,
+.xr-preview,
+.xr-attrs dt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.xr-var-name:hover,
+.xr-var-dims:hover,
+.xr-var-dtype:hover,
+.xr-attrs dt:hover {
+  overflow: visible;
+  width: auto;
+  z-index: 1;
+}
+
+.xr-var-attrs,
+.xr-var-data,
+.xr-index-data {
+  display: none;
+  background-color: var(--xr-background-color) !important;
+  padding-bottom: 5px !important;
+}
+
+.xr-var-attrs-in:checked ~ .xr-var-attrs,
+.xr-var-data-in:checked ~ .xr-var-data,
+.xr-index-data-in:checked ~ .xr-index-data {
+  display: block;
+}
+
+.xr-var-data > table {
+  float: right;
+}
+
+.xr-var-name span,
+.xr-var-data,
+.xr-index-name div,
+.xr-index-data,
+.xr-attrs {
+  padding-left: 25px !important;
+}
+
+.xr-attrs,
+.xr-var-attrs,
+.xr-var-data,
+.xr-index-data {
+  grid-column: 1 / -1;
+}
+
+dl.xr-attrs {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 125px auto;
+}
+
+.xr-attrs dt,
+.xr-attrs dd {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  width: auto;
+}
+
+.xr-attrs dt {
+  font-weight: normal;
+  grid-column: 1;
+}
+
+.xr-attrs dt:hover span {
+  display: inline-block;
+  background: var(--xr-background-color);
+  padding-right: 10px;
+}
+
+.xr-attrs dd {
+  grid-column: 2;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.xr-icon-database,
+.xr-icon-file-text2,
+.xr-no-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1.5em !important;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.DatasetView&gt; Size: 51MB
+Dimensions:                                                (azimuth: 360,
+                                                            range: 1100)
+Coordinates:
+    time                                                   (azimuth) datetime64[ns] 3kB ...
+  * range                                                  (range) float32 4kB ...
+  * azimuth                                                (azimuth) float32 1kB ...
+    elevation                                              (azimuth) float32 1kB ...
+    latitude                                               float32 4B ...
+    longitude                                              float32 4B ...
+    altitude                                               float32 4B ...
+Data variables: (12/38)
+    time_offset                                            (azimuth) datetime64[ns] 3kB ...
+    attenuation_corrected_differential_reflectivity        (azimuth, range) float32 2MB ...
+    attenuation_corrected_differential_reflectivity_lag_1  (azimuth, range) float32 2MB ...
+    attenuation_corrected_reflectivity_h                   (azimuth, range) float32 2MB ...
+    censor_mask                                            (azimuth, range) int32 2MB ...
+    classification_mask                                    (azimuth, range) int32 2MB ...
+    ...                                                     ...
+    unthresholded_power_copolar_v                          (azimuth, range) float32 2MB ...
+    sweep_fixed_angle                                      float32 4B ...
+    nyquist_velocity                                       (azimuth) float32 1kB ...
+    prt                                                    (azimuth) float32 1kB ...
+    sweep_mode                                             &lt;U6 24B &#x27;sector&#x27;
+    sweep_number                                           float64 8B ...</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>datatree.DataTree</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-c9f4fdbb-5262-430c-a71f-96d1ed787452' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c9f4fdbb-5262-430c-a71f-96d1ed787452' class='xr-section-summary'  title='Expand/collapse section'>Groups: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><div style='display: inline-grid; grid-template-columns: 100%'></div></div></li><li class='xr-section-item'><input id='section-c7963cda-edc4-4da9-9969-ab3726c78716' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c7963cda-edc4-4da9-9969-ab3726c78716' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>azimuth</span>: 360</li><li><span class='xr-has-index'>range</span>: 1100</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-aa3cc2fe-782e-4304-ad00-9e7573a00660' class='xr-section-summary-in' type='checkbox'  checked><label for='section-aa3cc2fe-782e-4304-ad00-9e7573a00660' class='xr-section-summary' >Coordinates: <span>(7)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>time</span></div><div class='xr-var-dims'>(azimuth)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2025-03-15T00:00:13.781999 ... 2...</div><input id='attrs-1f93d35b-7d23-4177-a6a9-4e6392f58934' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-1f93d35b-7d23-4177-a6a9-4e6392f58934' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1b639633-fff3-40da-be8f-0455bc97a1f8' class='xr-var-data-in' type='checkbox'><label for='data-1b639633-fff3-40da-be8f-0455bc97a1f8' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Time in seconds since volume start</dd><dt><span>standard_name :</span></dt><dd>time</dd></dl></div><div class='xr-var-data'><pre>array([&#x27;2025-03-15T00:00:13.781999000&#x27;, &#x27;2025-03-15T00:00:13.882999000&#x27;,
+       &#x27;2025-03-15T00:00:13.984999000&#x27;, ..., &#x27;2025-03-15T00:00:13.486999000&#x27;,
+       &#x27;2025-03-15T00:00:13.587999000&#x27;, &#x27;2025-03-15T00:00:13.689999000&#x27;],
+      dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>range</span></div><div class='xr-var-dims'>(range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>0.0 100.0 ... 1.098e+05 1.099e+05</div><input id='attrs-ee20abcb-a9ac-4d78-abeb-d785111da0b8' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-ee20abcb-a9ac-4d78-abeb-d785111da0b8' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e3863f5b-2257-43ab-a416-6a4f3c033747' class='xr-var-data-in' type='checkbox'><label for='data-e3863f5b-2257-43ab-a416-6a4f3c033747' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Range to measurement volume</dd><dt><span>units :</span></dt><dd>m</dd><dt><span>meters_between_gates :</span></dt><dd>100.0</dd><dt><span>meters_to_center_of_first_gate :</span></dt><dd>50.0</dd><dt><span>spacing_is_constant :</span></dt><dd>True</dd><dt><span>standard_name :</span></dt><dd>projection_range_coordinate</dd><dt><span>axis :</span></dt><dd>radial_range_coordinate</dd></dl></div><div class='xr-var-data'><pre>array([0.000e+00, 1.000e+02, 2.000e+02, ..., 1.097e+05, 1.098e+05, 1.099e+05],
+      dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>azimuth</span></div><div class='xr-var-dims'>(azimuth)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>0.5219 1.544 2.554 ... 358.6 359.5</div><input id='attrs-e23272cc-b100-40f9-aea2-275a1670befe' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e23272cc-b100-40f9-aea2-275a1670befe' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-d80dc2d7-b602-44a0-84b9-fde3d0c31ac0' class='xr-var-data-in' type='checkbox'><label for='data-d80dc2d7-b602-44a0-84b9-fde3d0c31ac0' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Azimuth angle from true north</dd><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sensor_to_target_azimuth_angle</dd><dt><span>axis :</span></dt><dd>radial_azimuth_coordinate</dd></dl></div><div class='xr-var-data'><pre>array([  0.521851,   1.543579,   2.554321, ..., 357.5418  , 358.57452 ,
+       359.54132 ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>elevation</span></div><div class='xr-var-dims'>(azimuth)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-624b07b8-8ae0-4367-8be1-addb739b64de' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-624b07b8-8ae0-4367-8be1-addb739b64de' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b1372942-a6d1-44f8-9087-c240c0fe3562' class='xr-var-data-in' type='checkbox'><label for='data-b1372942-a6d1-44f8-9087-c240c0fe3562' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Elevation angle from horizontal plane</dd><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>sensor_to_target_elevation_angle</dd><dt><span>axis :</span></dt><dd>radial_elevation_coordinate</dd></dl></div><div class='xr-var-data'><pre>[360 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latitude</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-eaf01245-b955-43b8-a0a0-ef1972f85124' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-eaf01245-b955-43b8-a0a0-ef1972f85124' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b261490e-1d00-40d8-b2ee-2a66ecbd1a87' class='xr-var-data-in' type='checkbox'><label for='data-b261490e-1d00-40d8-b2ee-2a66ecbd1a87' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Latitude</dd><dt><span>units :</span></dt><dd>degree_N</dd><dt><span>standard_name :</span></dt><dd>latitude</dd><dt><span>valid_min :</span></dt><dd>-90.0</dd><dt><span>valid_max :</span></dt><dd>90.0</dd></dl></div><div class='xr-var-data'><pre>[1 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>longitude</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-21f7b7be-5b62-4734-9725-1e51fb2b3563' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-21f7b7be-5b62-4734-9725-1e51fb2b3563' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1bf5fc2d-d924-4fbc-a392-3c6d9e446de1' class='xr-var-data-in' type='checkbox'><label for='data-1bf5fc2d-d924-4fbc-a392-3c6d9e446de1' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Longitude</dd><dt><span>units :</span></dt><dd>degree_E</dd><dt><span>standard_name :</span></dt><dd>longitude</dd><dt><span>valid_min :</span></dt><dd>-180.0</dd><dt><span>valid_max :</span></dt><dd>180.0</dd></dl></div><div class='xr-var-data'><pre>[1 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>altitude</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-3de96651-3799-48a9-b5b3-e7fda287acec' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-3de96651-3799-48a9-b5b3-e7fda287acec' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-bf75c635-a594-443d-b146-7763970a9e94' class='xr-var-data-in' type='checkbox'><label for='data-bf75c635-a594-443d-b146-7763970a9e94' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Altitude</dd><dt><span>units :</span></dt><dd>m</dd><dt><span>standard_name :</span></dt><dd>altitude</dd></dl></div><div class='xr-var-data'><pre>[1 values with dtype=float32]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-5948c71f-e372-4fe2-9643-694e078babc1' class='xr-section-summary-in' type='checkbox'  ><label for='section-5948c71f-e372-4fe2-9643-694e078babc1' class='xr-section-summary' >Data variables: <span>(38)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>time_offset</span></div><div class='xr-var-dims'>(azimuth)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-96190fe5-2c6e-4bc2-8d19-cfd9a2e84815' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-96190fe5-2c6e-4bc2-8d19-cfd9a2e84815' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0443489e-b7a1-4081-a3fd-db2c612e92fc' class='xr-var-data-in' type='checkbox'><label for='data-0443489e-b7a1-4081-a3fd-db2c612e92fc' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Time offset from base_time</dd><dt><span>ancillary_variables :</span></dt><dd>base_time</dd></dl></div><div class='xr-var-data'><pre>[360 values with dtype=datetime64[ns]]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>attenuation_corrected_differential_reflectivity</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-acb8c907-733b-4b0d-a60c-9466c5390105' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-acb8c907-733b-4b0d-a60c-9466c5390105' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-fb0f8b8f-0c49-447e-b400-0410efaf70dc' class='xr-var-data-in' type='checkbox'><label for='data-fb0f8b8f-0c49-447e-b400-0410efaf70dc' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Rainfall attenuation-corrected differential reflectivity</dd><dt><span>units :</span></dt><dd>dB</dd><dt><span>standard_name :</span></dt><dd>radar_differential_reflectivity_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>attenuation_corrected_differential_reflectivity_lag_1</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-e4be6369-f53c-44aa-ad27-0ee26fe85e82' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e4be6369-f53c-44aa-ad27-0ee26fe85e82' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a72f28ee-402d-4931-8786-a42cb712fcf6' class='xr-var-data-in' type='checkbox'><label for='data-a72f28ee-402d-4931-8786-a42cb712fcf6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Differential reflectivity estimated at lag 1 corrected for rainfall attenuation.</dd><dt><span>units :</span></dt><dd>dB</dd><dt><span>standard_name :</span></dt><dd>radar_differential_reflectivity_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>attenuation_corrected_reflectivity_h</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-de7ab3be-fd89-4fea-b9fd-0baea53ab693' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-de7ab3be-fd89-4fea-b9fd-0baea53ab693' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-61e6a591-7a40-443c-b0bd-8adcb032b3ed' class='xr-var-data-in' type='checkbox'><label for='data-61e6a591-7a40-443c-b0bd-8adcb032b3ed' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Rainfall attenuation-corrected reflectivity, horizontal channel</dd><dt><span>units :</span></dt><dd>dBZ</dd><dt><span>standard_name :</span></dt><dd>equivalent_reflectivity_factor</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>censor_mask</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-f7fd2fc2-412d-41c8-9f73-f2ccd11db31e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f7fd2fc2-412d-41c8-9f73-f2ccd11db31e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4131ff70-d0d0-43f4-9701-58a59429f29c' class='xr-var-data-in' type='checkbox'><label for='data-4131ff70-d0d0-43f4-9701-58a59429f29c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Censor Mask</dd><dt><span>units :</span></dt><dd>1</dd><dt><span>flag_masks :</span></dt><dd>[   1    2    4    8   16   32   64  128  256  512 1024 2048]</dd><dt><span>flag_meanings :</span></dt><dd>horizontal_snr_below_noise_threshold vertical_snr_below_noise_threshold horizontal_ccor_below_ccor_threshold vertical_ccor_below_ccor_threshold horizontal_sqi_below_sqi1_threshold vertical_sqi_below_sqi1_threshold horizontal_sqi_below_sqi2_threshold vertical_sqi_below_sqi2_threshold horizontal_sigpow_below_sigpow_threshold vertical_sigpow_below_sigpow_threshold urhohv_below_rhohv_threshold censored_by_clutter_micro_suppression</dd><dt><span>standard_name :</span></dt><dd>radar_quality_mask</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=int32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>classification_mask</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-a408668b-7094-48e5-8475-4f96f3d393a6' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a408668b-7094-48e5-8475-4f96f3d393a6' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-718b1561-4414-4020-a8e9-7572276ece91' class='xr-var-data-in' type='checkbox'><label for='data-718b1561-4414-4020-a8e9-7572276ece91' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Classification Mask</dd><dt><span>units :</span></dt><dd>1</dd><dt><span>flag_masks :</span></dt><dd>[ 1  2  4  8 16]</dd><dt><span>flag_meanings :</span></dt><dd>second_trip third_trip interference clutter sunspoke</dd><dt><span>standard_name :</span></dt><dd>radar_quality_mask</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=int32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>copol_correlation_coeff</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-672025df-dac5-44b2-8be7-1746004aacaf' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-672025df-dac5-44b2-8be7-1746004aacaf' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a0f564f3-867f-46a0-a858-60a16e89f4d6' class='xr-var-data-in' type='checkbox'><label for='data-a0f564f3-867f-46a0-a858-60a16e89f4d6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Copolar correlation coefficient (also known as rhohv)</dd><dt><span>units :</span></dt><dd>1</dd><dt><span>standard_name :</span></dt><dd>radar_correlation_coefficient_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>differential_phase</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-36b6385f-27a9-4e48-962e-3ba5bd4c6f4b' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-36b6385f-27a9-4e48-962e-3ba5bd4c6f4b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-07cd23b2-4a5e-4773-8382-4cfdb7ffe3cc' class='xr-var-data-in' type='checkbox'><label for='data-07cd23b2-4a5e-4773-8382-4cfdb7ffe3cc' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Differential propagation phase shift</dd><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>radar_differential_phase_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>differential_reflectivity</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-36d5fc4c-9214-4c23-8c43-891140acd94a' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-36d5fc4c-9214-4c23-8c43-891140acd94a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-af1f03e8-30e9-4425-8d05-df766aa04628' class='xr-var-data-in' type='checkbox'><label for='data-af1f03e8-30e9-4425-8d05-df766aa04628' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Differential reflectivity</dd><dt><span>units :</span></dt><dd>dB</dd><dt><span>standard_name :</span></dt><dd>radar_differential_reflectivity_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>differential_reflectivity_lag_1</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-5eefe1a3-f2f3-4bef-8ec6-29964d6aa80c' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-5eefe1a3-f2f3-4bef-8ec6-29964d6aa80c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ffcf8eba-7dde-4c51-bf40-181697a61dfb' class='xr-var-data-in' type='checkbox'><label for='data-ffcf8eba-7dde-4c51-bf40-181697a61dfb' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Differential reflectivity estimated at lag 1</dd><dt><span>units :</span></dt><dd>dB</dd><dt><span>standard_name :</span></dt><dd>radar_differential_reflectivity_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>mean_doppler_velocity</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-92bf89a0-88db-473c-93c7-537da9551552' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-92bf89a0-88db-473c-93c7-537da9551552' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-fbe6b8eb-f5d2-46fd-977c-f6c9ee3b2460' class='xr-var-data-in' type='checkbox'><label for='data-fbe6b8eb-f5d2-46fd-977c-f6c9ee3b2460' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Radial mean Doppler velocity, positive for motion away from the instrument</dd><dt><span>units :</span></dt><dd>m/s</dd><dt><span>standard_name :</span></dt><dd>radial_velocity_of_scatterers_away_from_instrument</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>mean_doppler_velocity_v</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-9a175ad2-c0e3-4762-8c8e-5e588989ef2b' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-9a175ad2-c0e3-4762-8c8e-5e588989ef2b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-08aa0a9e-3260-4651-bb58-e0e5eb28720f' class='xr-var-data-in' type='checkbox'><label for='data-08aa0a9e-3260-4651-bb58-e0e5eb28720f' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Doppler velocity, vertical channel</dd><dt><span>units :</span></dt><dd>m/s</dd><dt><span>standard_name :</span></dt><dd>radial_velocity_of_scatterers_away_from_instrument</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>normalized_coherent_power</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-1d77df32-22a2-460e-8ba1-48418d0cc19e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-1d77df32-22a2-460e-8ba1-48418d0cc19e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ed8b8c7a-3a77-4d73-8a46-5897c997f8fd' class='xr-var-data-in' type='checkbox'><label for='data-ed8b8c7a-3a77-4d73-8a46-5897c997f8fd' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Normalized coherent power, also known as SQI.</dd><dt><span>units :</span></dt><dd>1</dd><dt><span>standard_name :</span></dt><dd>radar_normalized_coherent_power</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>normalized_coherent_power_v</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-78347eb4-76fb-4f37-904c-7888bc7181c6' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-78347eb4-76fb-4f37-904c-7888bc7181c6' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-98f4da2e-d601-4bda-89b9-02af78e4273d' class='xr-var-data-in' type='checkbox'><label for='data-98f4da2e-d601-4bda-89b9-02af78e4273d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Normalized coherent power, also known as SQI, Vertical Channel</dd><dt><span>units :</span></dt><dd>1</dd><dt><span>standard_name :</span></dt><dd>radar_normalized_coherent_power</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>reflectivity</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-e4a00090-cb35-4ed6-9671-190e672d7d56' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e4a00090-cb35-4ed6-9671-190e672d7d56' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6c8052e1-3c13-4c6c-b310-3c3ab85ba6da' class='xr-var-data-in' type='checkbox'><label for='data-6c8052e1-3c13-4c6c-b310-3c3ab85ba6da' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Equivalent reflectivity factor</dd><dt><span>units :</span></dt><dd>dBZ</dd><dt><span>standard_name :</span></dt><dd>equivalent_reflectivity_factor</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>reflectivity_v</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-96bb735f-e1d8-4a3b-8175-11a63cc47972' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-96bb735f-e1d8-4a3b-8175-11a63cc47972' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e5f5ddf6-4e92-40ef-b4ae-dea3a981d168' class='xr-var-data-in' type='checkbox'><label for='data-e5f5ddf6-4e92-40ef-b4ae-dea3a981d168' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Equivalent reflectivity factor, vertical channel</dd><dt><span>units :</span></dt><dd>dBZ</dd><dt><span>standard_name :</span></dt><dd>equivalent_reflectivity_factor</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>signal_to_noise_ratio_copolar_h</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-4e7a338e-f73b-42de-aefa-90efd160d923' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-4e7a338e-f73b-42de-aefa-90efd160d923' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8407fcc5-3d72-4051-a5a1-588c1a1aa955' class='xr-var-data-in' type='checkbox'><label for='data-8407fcc5-3d72-4051-a5a1-588c1a1aa955' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Signal-to-noise ratio, horizontal channel</dd><dt><span>units :</span></dt><dd>dB</dd><dt><span>standard_name :</span></dt><dd>radar_signal_to_noise_ratio_copolar_h</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>signal_to_noise_ratio_copolar_v</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-dbb51dca-27c6-4d83-b0e9-adb1034b641d' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-dbb51dca-27c6-4d83-b0e9-adb1034b641d' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-342da067-31e9-4b32-abfe-a4a9188c2782' class='xr-var-data-in' type='checkbox'><label for='data-342da067-31e9-4b32-abfe-a4a9188c2782' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Signal-to-noise ratio, vertical channel</dd><dt><span>units :</span></dt><dd>dB</dd><dt><span>standard_name :</span></dt><dd>radar_signal_to_noise_ratio_copolar_v</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>specific_differential_phase</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-29d39e46-0b14-4bc4-94fd-54f23f4a7b70' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-29d39e46-0b14-4bc4-94fd-54f23f4a7b70' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1ca53d69-8f40-42e2-acb4-f78c5613ae4d' class='xr-var-data-in' type='checkbox'><label for='data-1ca53d69-8f40-42e2-acb4-f78c5613ae4d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Specific differential phase (KDP)</dd><dt><span>units :</span></dt><dd>degree/km</dd><dt><span>standard_name :</span></dt><dd>radar_specific_differential_phase_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>spectral_width</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-fca9b162-57ef-4f90-9d2d-0f619227ff6a' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-fca9b162-57ef-4f90-9d2d-0f619227ff6a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f679c145-210d-420f-a35c-fd343e66edca' class='xr-var-data-in' type='checkbox'><label for='data-f679c145-210d-420f-a35c-fd343e66edca' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Spectral width</dd><dt><span>units :</span></dt><dd>m/s</dd><dt><span>standard_name :</span></dt><dd>radar_doppler_spectrum_width</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>spectral_width_v</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-9fa78f38-ed08-4963-b5c0-022cd6c93576' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-9fa78f38-ed08-4963-b5c0-022cd6c93576' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-cbd15415-d4f2-4e3b-8e52-2f70d42d92eb' class='xr-var-data-in' type='checkbox'><label for='data-cbd15415-d4f2-4e3b-8e52-2f70d42d92eb' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Spectral Width, Vertical Channel</dd><dt><span>units :</span></dt><dd>m/s</dd><dt><span>standard_name :</span></dt><dd>radar_doppler_spectrum_width</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_copol_correlation_coeff</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-13509925-f263-4163-aedb-65eefdc24dd6' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-13509925-f263-4163-aedb-65eefdc24dd6' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ea6a492e-0943-482d-92a0-8eebde8c6c96' class='xr-var-data-in' type='checkbox'><label for='data-ea6a492e-0943-482d-92a0-8eebde8c6c96' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Uncorrected copolar correlation coefficient</dd><dt><span>units :</span></dt><dd>1</dd><dt><span>standard_name :</span></dt><dd>radar_correlation_coefficient_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_differential_phase</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-f12b9d4e-6d1d-4b5e-9564-a8486ca08f4d' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f12b9d4e-6d1d-4b5e-9564-a8486ca08f4d' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b3d7d00f-81ce-40ff-bdab-4048cf6f2767' class='xr-var-data-in' type='checkbox'><label for='data-b3d7d00f-81ce-40ff-bdab-4048cf6f2767' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Uncorrected Differential Phase</dd><dt><span>units :</span></dt><dd>degree</dd><dt><span>standard_name :</span></dt><dd>radar_differential_phase_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_differential_reflectivity</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-632809b3-ea88-4a0a-8115-da013419b577' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-632809b3-ea88-4a0a-8115-da013419b577' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-735e0575-12ef-41fe-8afb-9141b6973cd8' class='xr-var-data-in' type='checkbox'><label for='data-735e0575-12ef-41fe-8afb-9141b6973cd8' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Uncorrected Differential Reflectivity, Vertical Channel</dd><dt><span>units :</span></dt><dd>dBZ</dd><dt><span>standard_name :</span></dt><dd>radar_differential_reflectivity_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_differential_reflectivity_lag_1</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-9f3f5ba7-5396-49c1-9313-d09f8f6e310e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-9f3f5ba7-5396-49c1-9313-d09f8f6e310e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-53ba78c8-dc24-4d1d-bad0-6fc22a182f85' class='xr-var-data-in' type='checkbox'><label for='data-53ba78c8-dc24-4d1d-bad0-6fc22a182f85' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Uncorrected differential reflectivity estimated at lag 1</dd><dt><span>units :</span></dt><dd>dB</dd><dt><span>standard_name :</span></dt><dd>radar_differential_reflectivity_hv</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_mean_doppler_velocity_h</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-0f454ebf-7115-4813-8180-dbc04868de80' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-0f454ebf-7115-4813-8180-dbc04868de80' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-2a87b2c9-6560-43d5-80f4-73f87704b638' class='xr-var-data-in' type='checkbox'><label for='data-2a87b2c9-6560-43d5-80f4-73f87704b638' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Radial mean Doppler velocity from horizontal channel, positive for motion away from the instrument, uncorrected</dd><dt><span>units :</span></dt><dd>m/s</dd><dt><span>standard_name :</span></dt><dd>radial_velocity_of_scatterers_away_from_instrument</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_mean_doppler_velocity_v</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-7ef39042-8b6b-4e7b-be39-dd21937c4412' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-7ef39042-8b6b-4e7b-be39-dd21937c4412' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8eddde97-9f9b-4550-81c4-f917bcba4064' class='xr-var-data-in' type='checkbox'><label for='data-8eddde97-9f9b-4550-81c4-f917bcba4064' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Radial mean Doppler velocity from vertical channel, positive for motion away from the instrument, uncorrected</dd><dt><span>units :</span></dt><dd>m/s</dd><dt><span>standard_name :</span></dt><dd>radial_velocity_of_scatterers_away_from_instrument</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_reflectivity_h</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-8b1ac52a-ad90-4f25-af3d-2e339c974b9c' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-8b1ac52a-ad90-4f25-af3d-2e339c974b9c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1b806bc6-4049-4572-b90c-79e4671d7788' class='xr-var-data-in' type='checkbox'><label for='data-1b806bc6-4049-4572-b90c-79e4671d7788' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Uncorrected Reflectivity, Horizontal Channel</dd><dt><span>units :</span></dt><dd>dBZ</dd><dt><span>standard_name :</span></dt><dd>equivalent_reflectivity_factor</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_reflectivity_v</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-a3a0ea34-996f-40b5-8634-643ea271c71c' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a3a0ea34-996f-40b5-8634-643ea271c71c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0e431a49-1c5b-4169-967c-2cbe09e994bc' class='xr-var-data-in' type='checkbox'><label for='data-0e431a49-1c5b-4169-967c-2cbe09e994bc' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Uncorrected Reflectivity, Vertical Channel</dd><dt><span>units :</span></dt><dd>dBZ</dd><dt><span>standard_name :</span></dt><dd>equivalent_reflectivity_factor</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_spectral_width_h</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-b5d30f46-c3f4-44ee-9397-ca6c3b9eb73f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-b5d30f46-c3f4-44ee-9397-ca6c3b9eb73f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-d2276b67-c607-45a4-994e-ee0c072f9b99' class='xr-var-data-in' type='checkbox'><label for='data-d2276b67-c607-45a4-994e-ee0c072f9b99' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Uncorrected Spectral Width, Horizontal Channel</dd><dt><span>units :</span></dt><dd>m/s</dd><dt><span>standard_name :</span></dt><dd>radar_doppler_spectrum_width</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>uncorrected_spectral_width_v</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-eb5e94a6-4dc8-43e8-81f2-bc96093593c8' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-eb5e94a6-4dc8-43e8-81f2-bc96093593c8' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e93a2fae-2c58-4207-8bb3-694ea43dab23' class='xr-var-data-in' type='checkbox'><label for='data-e93a2fae-2c58-4207-8bb3-694ea43dab23' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Uncorrected Spectral Width, Vertical Channel</dd><dt><span>units :</span></dt><dd>m/s</dd><dt><span>standard_name :</span></dt><dd>radar_doppler_spectrum_width</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>unthresholded_power_copolar_h</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-f6eb5612-9ad6-403c-9570-f054c4f18e2f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f6eb5612-9ad6-403c-9570-f054c4f18e2f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-44bd5018-7773-4c01-baa8-2fa98bb0d943' class='xr-var-data-in' type='checkbox'><label for='data-44bd5018-7773-4c01-baa8-2fa98bb0d943' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Received copolar power, h channel, without thresholding.</dd><dt><span>units :</span></dt><dd>dBm</dd><dt><span>standard_name :</span></dt><dd>radar_received_signal_power_copolar_h</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>unthresholded_power_copolar_v</span></div><div class='xr-var-dims'>(azimuth, range)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-7c1409f3-4375-4ad8-b9a7-90726c6aa74b' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-7c1409f3-4375-4ad8-b9a7-90726c6aa74b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f203ceae-edf3-4eea-bc3a-4826a3e92fb3' class='xr-var-data-in' type='checkbox'><label for='data-f203ceae-edf3-4eea-bc3a-4826a3e92fb3' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Received copolar power, v channel, without thresholding</dd><dt><span>units :</span></dt><dd>dBm</dd><dt><span>standard_name :</span></dt><dd>radar_received_signal_power_copolar_v</dd><dt><span>unpacking_details :</span></dt><dd>Can be unpacked as follows: multiply packed values by scale_factor field attribute, then add the add_offset field attribute.</dd></dl></div><div class='xr-var-data'><pre>[396000 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>sweep_fixed_angle</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-55fcae0a-ee19-40c8-9e77-9b79c17478a0' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-55fcae0a-ee19-40c8-9e77-9b79c17478a0' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e9155157-9a0f-4285-927d-66a8dd8209e2' class='xr-var-data-in' type='checkbox'><label for='data-e9155157-9a0f-4285-927d-66a8dd8209e2' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Ray target fixed angle</dd><dt><span>units :</span></dt><dd>degree</dd></dl></div><div class='xr-var-data'><pre>[1 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>nyquist_velocity</span></div><div class='xr-var-dims'>(azimuth)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-90f17814-24aa-49b0-bcc6-9fcecf4cf7cc' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-90f17814-24aa-49b0-bcc6-9fcecf4cf7cc' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7e18df97-ce68-423c-9081-09e8e46512a6' class='xr-var-data-in' type='checkbox'><label for='data-7e18df97-ce68-423c-9081-09e8e46512a6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Unambiguous doppler velocity</dd><dt><span>units :</span></dt><dd>m/s</dd><dt><span>meta_group :</span></dt><dd>instrument_parameters</dd></dl></div><div class='xr-var-data'><pre>[360 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>prt</span></div><div class='xr-var-dims'>(azimuth)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-65d904de-a688-449e-ac2c-d0da30f9c159' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-65d904de-a688-449e-ac2c-d0da30f9c159' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b794a4bf-2a38-4b68-a453-835314310181' class='xr-var-data-in' type='checkbox'><label for='data-b794a4bf-2a38-4b68-a453-835314310181' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Pulse repetition time</dd><dt><span>units :</span></dt><dd>s</dd></dl></div><div class='xr-var-data'><pre>[360 values with dtype=float32]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>sweep_mode</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>&lt;U6</div><div class='xr-var-preview xr-preview'>&#x27;sector&#x27;</div><input id='attrs-b853de89-800d-4beb-b272-775b99265314' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-b853de89-800d-4beb-b272-775b99265314' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-68b3fab4-df55-4122-96a2-14bc7803cb8f' class='xr-var-data-in' type='checkbox'><label for='data-68b3fab4-df55-4122-96a2-14bc7803cb8f' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array(&#x27;sector&#x27;, dtype=&#x27;&lt;U6&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>sweep_number</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-2f81d589-a122-439d-b7dd-6f82fd02679a' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-2f81d589-a122-439d-b7dd-6f82fd02679a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8bf4d100-e33b-46c6-9da8-374b29b6a1b1' class='xr-var-data-in' type='checkbox'><label for='data-8bf4d100-e33b-46c6-9da8-374b29b6a1b1' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Sweep index number 0 based</dd><dt><span>units :</span></dt><dd>1</dd></dl></div><div class='xr-var-data'><pre>[1 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-707dbe16-f660-44b2-859c-33561a1c3c2d' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-707dbe16-f660-44b2-859c-33561a1c3c2d' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>
