@@ -5,12 +5,49 @@ ARM regularly holds open science summer schools, which offer students an opportu
 ## 2024 ARM Open Science Summer School
 - [Main Landing Page](https://arm-development.github.io/arm-summer-school-2024/)
 - [Github Repository](https://github.com/ARM-Development/arm-summer-school-2024)
-- [Project Cookbooks](https://arm-development.github.io/arm-summer-school-2024/projects/project-list.html)
+
+### ARM Open Science Summer School Cookbooks
+
+#### Convection initiation near the Sierras de Córdoba
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11265276.svg)](https://doi.org/10.5281/zenodo.11265276)
+- [Github Repo](https://github.com/aladinor/cacti-deep-convection)
+
+#### High-latitude Cold-Air Outbreaks with COMBLE and NSA
+[![DOI](https://zenodo.org/badge/803956728.svg)](https://zenodo.org/doi/10.5281/zenodo.11282650)
+- [Github Repo](https://github.com/Hseppal1/ARM-2024-high-latitude)
+
+#### LASSO Those Clouds
+[![DOI](https://zenodo.org/badge/803957729.svg)](https://zenodo.org/doi/10.5281/zenodo.11283460)
+- [Github Repo](https://github.com/tlincheck/lasso-those-clouds-cookbook)
+
+#### Aerosol influence on snowpack and local hydrologic processes during SAIL
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11282356.svg)](https://doi.org/10.5281/zenodo.11282356)
+- [Github Repo](https://github.com/YXIE1010/sail-cookbook)
 
 ## 2025 CAPE-k Student Workshop
 - [Main Landing Page](https://arm-development.github.io/cape-k-student-workshop-2025/)
 - [Github Repository](https://github.com/ARM-Development/cape-k-student-workshop-2025)
-- [Project Cookbooks](https://arm-development.github.io/cape-k-student-workshop-2025/projects)
+
+### CAPE-k Cookbooks
+
+#### Air Mass History
+[![DOI](https://zenodo.org/badge/927471281.svg)](https://doi.org/10.5281/zenodo.14822694)
+- [Github Repository](https://github.com/ARM-Synergy/cape-k-air-mass-history)
+
+#### Wildfires
+[![DOI](https://zenodo.org/badge/927472427.svg)](https://doi.org/10.5281/zenodo.15777231)
+- [Github Repository](https://github.com/ARM-Synergy/cape-k-wildfires)
+- [Project Presentation](https://docs.google.com/presentation/d/1sv_9_1pV23FydV9TtToAF5ZqkDZ_9OSE/edit?usp=sharing&ouid=104304750518137712212&rtpof=true&sd=true)
+
+#### MCC Clouds
+[![DOI](https://zenodo.org/badge/927471592.svg)](https://doi.org/10.5281/zenodo.15777324)
+- [Github Repository](https://github.com/ARM-Synergy/cape-k-mcc-clouds)
+- [Project Presentation](https://docs.google.com/presentation/d/1_D8IIskBNKqwjvoihSeGK_Z20gQvS2in/edit?usp=sharing&ouid=104304750518137712212&rtpof=true&sd=true)
+
+#### Oxidative Capacity
+[![DOI](https://zenodo.org/badge/927472006.svg)](https://doi.org/10.5281/zenodo.14822688)
+- [Github Repository](https://github.com/ARM-Synergy/cape-k-oxidative-capacity)
+- [Project Presentation](https://docs.google.com/presentation/d/14h62GImiPX2kdRZNUiCeCzIzCaF9UBMbSaOFNpLRrvs/edit?usp=sharing)
 
 ## 2025 BNF Summer School
 - [Main Landing Page](https://arm-development.github.io/arm-summer-school-2025/)
