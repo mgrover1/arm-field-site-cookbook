@@ -1,7 +1,19 @@
-name: cookbook-dev
+name: arm-field-site-cookbook-dev
 channels:
   - conda-forge
 dependencies:
-  - jupyterlab
+  - python=3.11
   - mystmd
-  - jupyterlab-myst
+  - cookiecutter
+  - act-atmos
+  - jupyterlab
+  - arm_pyart
+  - cartopy
+  - matplotlib
+  - pydda
+  - jaxopt
+  - tensorflow>=2.6
+  - xradar
+  - tensorflow-probability>=0.24
+  - xwrf
+  - tobac
