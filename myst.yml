@@ -17,13 +17,22 @@ project:
         - file: notebooks/how-to-cite.md
     - title: Foundations
       children:
-        - file: foundations/pyart/README.md
+        - title: Radar Data with Py-ART
           children:
             - file: foundations/pyart/pyart-basics.ipynb
             - file: foundations/pyart/radars-with-arm.ipynb
             - file: foundations/pyart/pyart-corrections.ipynb
             - file: foundations/pyart/pyart-gatefilers.ipynb
             - file: foundations/pyart/pyart-qpe.ipynb
+        - title: Timeseries Data with ACT
+          children:
+            - file: foundations/act/ACT-Basics-BNF.ipynb
+            - file: foundations/act/act-tower-data.ipynb
+        - title: Model and Observational Data with Xarray
+          children:
+            - file: foundations/xarray/xarray-intro.ipynb
+            - file: foundations/xarray/dask-xarray-demo.ipynb
+            - file: foundations/xarray/xwrf-xarray-intro.ipynb
     - title: Projects
       file: projects/README.md
       children:
@@ -35,5 +44,12 @@ project:
               children:
                 - file: projects/bnf-2025/bnf-deep-convection/coldpool-radar-analysis.ipynb
                 - file: projects/bnf-2025/bnf-deep-convection/coldpool-time-series.ipynb
+            - title: Aerosol Cloud Interactions Deposition (ACID)
+              children:
+                - file: projects/bnf-2025/acid/ccn-droplet-count.ipynb
+                - file: projects/bnf-2025/acid/optical-properties.ipynb
+            - title: Land Atmosphere Interactions
+              children:
+                - file: projects/bnf-2025/land-atmosphere-interactions/surface-energy-balance-all-sites.ipynb
       binder:
         repo: mgrover1/arm-field-site-cookbook
