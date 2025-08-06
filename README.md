@@ -2,8 +2,8 @@
 
 <img src="images/arm_logo.png" alt="thumbnail" width="300"/>
 
-[![nightly-build](https://github.com/mgrover1/arm-field-site-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/mgrover1/arm-field-site-cookbook/actions/workflows/nightly-build.yaml)
-[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/mgrover1/arm-field-site-cookbook/main?labpath=notebooks)
+[![nightly-build](https://github.com/ProjectPythia/arm-field-site-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/arm-field-site-cookbook/actions/workflows/nightly-build.yaml)
+[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/arm-field-site-cookbook/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
 
@@ -19,8 +19,8 @@ We consolidate computational workflow training materials from previous summer sc
 
 ### Contributors
 
-<a href="https://github.com/mgrover1/arm-field-site-cookbook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mgrover1/arm-field-site-cookbook" />
+<a href="https://github.com/ProjectPythia/arm-field-site-cookbook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ProjectPythia/arm-field-site-cookbook" />
 </a>
 
 ## Structure
@@ -65,10 +65,10 @@ If you are interested in running this material locally on your computer, you wil
 
 (Replace "cookbook-example" with the title of your cookbooks)
 
-1. Clone the `https://github.com/mgrover1/arm-field-site-cookbook` repository:
+1. Clone the `https://github.com/ProjectPythia/arm-field-site-cookbook` repository:
 
    ```bash
-    git clone https://github.com/mgrover1/arm-field-site-cookbook.git
+    git clone https://github.com/ProjectPythia/arm-field-site-cookbook.git
    ```
 
 1. Move into the `arm-field-site-cookbook` directory
