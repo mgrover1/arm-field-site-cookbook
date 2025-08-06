@@ -3,19 +3,37 @@ version: 1
 extends:
   - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
-  title: Project Pythia Cookbook Template
-  github: https://github.com/projectpythia/cookbook-template
+  title: ARM Field Site Cookbook
+  github: https://github.com/mgrover1/arm-field-site-cookbook
   authors:
-    - name: The Project Pythia Community
-  copyright: '2024'
+    - name: Max Grover
+      orcid: 0000-0002-0370-8974
+      github: mgrover1
+  copyright: '2025'
   toc:
     - file: README.md
     - title: Preamble
       children:
         - file: notebooks/how-to-cite.md
-    - title: Introduction
+    - title: Foundations
       children:
-        - file: notebooks/notebook-template.ipynb
-  jupyter:
+        - file: foundations/pyart/README.md
+          children:
+            - file: foundations/pyart/pyart-basics.ipynb
+            - file: foundations/pyart/radars-with-arm.ipynb
+            - file: foundations/pyart/pyart-corrections.ipynb
+            - file: foundations/pyart/pyart-gatefilers.ipynb
+            - file: foundations/pyart/pyart-qpe.ipynb
+    - title: Projects
+      file: projects/README.md
+      children:
+        - title: ARM Open Science Summer School 2024
+        - title: CAPE-k Student Workshop 2025
+        - title: BNF Open Science in the Forest 2025
+          children:
+            - title: BNF Deep Convection
+              children:
+                - file: projects/bnf-2025/bnf-deep-convection/coldpool-radar-analysis.ipynb
+                - file: projects/bnf-2025/bnf-deep-convection/coldpool-time-series.ipynb
       binder:
-        repo: projectpythia/cookbook-template
+        repo: mgrover1/arm-field-site-cookbook
