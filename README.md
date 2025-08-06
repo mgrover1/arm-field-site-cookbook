@@ -1,40 +1,37 @@
-# (Replace_with_your_title) Cookbook
+# ARM Field Site Cookbook
 
-<img src="thumbnails/thumbnail.png" alt="thumbnail" width="300"/>
+<img src="images/ARM_Logo.png" alt="thumbnail" width="300"/>
 
-[![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
-[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
+[![nightly-build](https://github.com/mgrover1/arm-field-site-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/mgrover1/arm-field-site-cookbook/actions/workflows/nightly-build.yaml)
+[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/mgrover1/arm-field-site-cookbook/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
-_See the [Cookbook Contributor's Guide](https://projectpythia.org/cookbook-guide) for step-by-step instructions on how to create your new Cookbook and get it hosted on the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org)!_
 
-This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
+This Project Pythia Cookbook covers how to work with ARM Field Campaign datasets, leveraging previous training and outreach event materials.
 
 ## Motivation
 
-(Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
+We consolidate computational workflow training materials from previous summer school and workshop events. There is a foundations section which details the core open-source tools, and a projects section showcasing previous students' workflows with the associated citation information.
 
 ## Authors
 
-[First Author](https://github.com/first-author1), [Second Author](https://github.com/second-author2), etc. _Acknowledge primary content authors here_
+[Max Grover](https://github.com/mgrover1)
 
 ### Contributors
 
-<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
+<a href="https://github.com/mgrover1/arm-field-site-cookbook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mgrover1/arm-field-site-cookbook" />
 </a>
 
 ## Structure
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+### Foundations
 
-### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+This section is dedicated to the core open-source tools which are used in the associated projects. We also include data access information in this section.
 
-(Add content for this section, e.g., "The foundational content includes ... ")
+### Projects
 
-### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
-
-(Add content for this section, e.g., "Example workflows include ... ")
+Project notebooks from previous training events are included in this section. We apply additional cleaning and reproducibility work that could not be finalized during the week-long events.
 
 ## Running the Notebooks
 
@@ -68,23 +65,23 @@ If you are interested in running this material locally on your computer, you wil
 
 (Replace "cookbook-example" with the title of your cookbooks)
 
-1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
+1. Clone the `https://github.com/mgrover1/arm-field-site-cookbook` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythia/cookbook-example.git
+    git clone https://github.com/mgrover1/arm-field-site-cookbook.git
    ```
 
-1. Move into the `cookbook-example` directory
+1. Move into the `arm-field-site-cookbook` directory
    ```bash
-   cd cookbook-example
+   cd arm-field-site-cookbook
    ```
 1. Create and activate your conda environment from the `environment.yml` file
    ```bash
    conda env create -f environment.yml
-   conda activate cookbook-example
+   conda activate arm-field-site-cookbook-dev
    ```
-1. Move into the `notebooks` directory and start up Jupyterlab
+1. Move into the `foundations` directory and start up Jupyterlab
    ```bash
-   cd notebooks/
+   cd foundations
    jupyter lab
    ```
